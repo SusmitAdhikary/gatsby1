@@ -76,6 +76,14 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+		`gatsby-plugin-netlify-cms`,
+	  // {
+    //   resolve: `gatsby-source-contentful`,
+    //   options: {
+    //     spaceId: 'h4dhpz2493m3',
+		//     accessToken: 'yn9s7n3BieC5BhyfENhY3ZNcRt7ut16z4AwgFsnlgGE',
+    //   },
+    // },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
