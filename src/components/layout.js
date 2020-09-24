@@ -5,6 +5,8 @@ import { rhythm, scale } from "../utils/typography"
 import Menu from "./menu"
 import '../styles/styles.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import icon from '../../static/img/gatsby-icon.png'
+
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -25,7 +27,9 @@ const Layout = ({ location, title, children }) => {
           }}
           to={`/`}
         >
-          {title}
+         <div style={{ maxWidth: `80px`, marginBottom: `-1rem` }}>
+          <img src={ icon } title={title}/>
+        </div>
         </Link>
       </h1>
     )
