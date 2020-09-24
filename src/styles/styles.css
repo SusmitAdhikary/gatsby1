@@ -1,12 +1,23 @@
+body{
+  font-size: 16x;
+}
+body a{
+  font-size: 14px;
+}
+body h1{
+  font-size:1.75rem;
+  color: #0056b3;
+}
 .maim-menu ul li{
   background: #CCC;
   margin-right: 1px;
+  padding: 7px 0;
 }
 .maim-menu ul li a{
   text-decoration: none !important;
   color: black;
   font-size: 14px;
   font-weight: bold;
-  padding: 10px 26px;
+  padding: 0 26px;
   box-shadow: none;
 }

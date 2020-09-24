@@ -13,7 +13,7 @@ const Blogs = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="Blogs" />
-      
+      <h1>List of Blogs</h1>
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
@@ -23,20 +23,22 @@ const Blogs = ({ data, location }) => {
             itemType="http://schema.org/Article"
           >
             <header>
+            
               <h3
                 style={{
                   marginBottom: rhythm(1 / 4),
                 }}
               >
                 <Link
-                  style={{ boxShadow: `none` }}
+                  style={{ boxShadow: `none`, fontSize: 14 }}
                   to={node.fields.slug}
                   itemProp="url"
                 >
                   <span itemProp="headline">{title}</span>
                 </Link>
               </h3>
-              <small>{node.frontmatter.date}</small>
+              <div><small><b>Published date: </b>{node.frontmatter.date}</small></div>
+              <div><small><b>Tag: </b>{node.frontmatter.tags}</small></div>
             </header>
             <section>
               <p
@@ -72,6 +74,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
+            tags
             description
           }
         }

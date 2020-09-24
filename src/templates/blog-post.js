@@ -17,7 +17,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
-      <article itemScope itemType="http://schema.org/Article">
+      <article>
         <header>
           <h1
             itemProp="headline"
@@ -35,7 +35,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
               marginBottom: rhythm(1),
             }}
           >
-            {post.frontmatter.date}
+            <div><small><b>Published date: </b>{post.frontmatter.date}</small></div>
+            <div><small><b>Tag: </b>{post.frontmatter.tags}</small></div>
           </p>
         </header>
         <section
@@ -100,6 +101,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        tags
       }
     }
   }
