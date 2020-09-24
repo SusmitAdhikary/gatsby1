@@ -42,6 +42,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
+				<p>{post.frontmatter.date}</p>
         <hr
           style={{
             marginBottom: rhythm(1),
