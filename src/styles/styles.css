@@ -1,0 +1,12 @@
+.maim-menu ul li{
+  background: #CCC;
+  margin-right: 1px;
+}
+.maim-menu ul li a{
+  text-decoration: none !important;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 26px;
+  box-shadow: none;
+}

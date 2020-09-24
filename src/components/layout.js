@@ -3,7 +3,8 @@ import { Link } from "gatsby"
 
 import { rhythm, scale } from "../utils/typography"
 import Menu from "./menu"
-
+import '../styles/styles.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -12,8 +13,8 @@ const Layout = ({ location, title, children }) => {
   header = (
       <h1
         style={{
-          ...scale(1.5),
-          marginBottom: rhythm(1.5),
+          ...scale(.5),
+          marginBottom: rhythm(.5),
           marginTop: 0,
         }}
       >
@@ -24,7 +25,7 @@ const Layout = ({ location, title, children }) => {
           }}
           to={`/`}
         >
-          Test {title}
+          {title}
         </Link>
       </h1>
     )
@@ -34,7 +35,7 @@ const Layout = ({ location, title, children }) => {
         marginLeft: `auto`,
         marginRight: `auto`,
         maxWidth: rhythm(24),
-        padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+        padding: `${rhythm(.5)} ${rhythm(3 / 4)}`,
       }}
     >
       <header>{header}</header>
