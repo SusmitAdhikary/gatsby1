@@ -5,6 +5,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
+import Img from "gatsby-image"
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
@@ -37,6 +38,10 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           >
             <div><small><b>Published date: </b>{post.frontmatter.date}</small></div>
             <div><small><b>Tag: </b>{post.frontmatter.tags}</small></div>
+            <div><img src={post.frontmatter.featuredimage} /></div>
+            <p>
+            
+            </p>
           </p>
         </header>
         <section
@@ -102,6 +107,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
         tags
+        featuredimage
       }
     }
   }
