@@ -6,7 +6,7 @@ description: Lorem Ipsum is simply dummy text of the printing and typesetting
   industry. Lorem Ipsum is simply dummy text of the printing and typesetting
   industry...
 featuredpost: true
-featuredimage: /img/logo192.png
+featuredimage: /img/blog1.jpg
 tags:
   - Lorem
 author: John Doe
