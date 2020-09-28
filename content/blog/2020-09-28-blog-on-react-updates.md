@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Blog on React Updates
+title: "Blog on React Updates "
 date: 2020-09-28T13:23:03.768Z
 description: Lorem Ipsum is simply dummy text of the printing and typesetting
   industry. Lorem Ipsum has been the industry's standard dummy text ever since
