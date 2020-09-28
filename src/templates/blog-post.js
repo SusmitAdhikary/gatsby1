@@ -38,6 +38,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           >
             <div><small><b>Published date: </b>{post.frontmatter.date}</small></div>
             <div><small><b>Tag: </b>{post.frontmatter.tags}</small></div>
+            <div><small><b>Author: </b>{post.frontmatter.author}</small></div>
             <div><img src={post.frontmatter.featuredimage} /></div>
             <p>
             
@@ -107,6 +108,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
         tags
+        author
         featuredimage
       }
     }
