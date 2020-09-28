@@ -109,7 +109,13 @@ export const pageQuery = graphql`
         description
         tags
         author
-        featuredimage
+        featuredimage {
+          childImageSharp {
+            fixed(width: 200, height: 125) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
       }
     }
   }
